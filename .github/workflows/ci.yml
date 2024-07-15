@@ -10,7 +10,7 @@ jobs:
       matrix:
         os: ["ubuntu-latest", "macos-latest", "windows-latest"]
         python-version: ["3.11"]
-        pkg: ["libgdal=3.9.0", "libgdal-core=3.9.1"]
+        pkg: ["libgdal=3.9.0 libkml-devel", "libgdal-core=3.9.1"]
     steps:
       - uses: conda-incubator/setup-miniconda@v3
         with:
