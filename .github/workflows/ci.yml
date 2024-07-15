@@ -24,6 +24,6 @@ jobs:
         run: conda list
       - name: Install gdal
         shell: bash -el {0}
-        run: conda create -n gdal libgdal=3.9.0
+        run: conda create -n gdal $PKG -c conda-forge
         env:
           PKG: ${{ matrix.pkg }}
