@@ -1,5 +1,8 @@
+name: Test gdal install times
+on: [push, pull_request]
+
 jobs:
-  example-1:
+  example:
     name: ${{ matrix.pkg }} ${{ matrix.os }}
     runs-on: ${{ matrix.os }}
     strategy:
